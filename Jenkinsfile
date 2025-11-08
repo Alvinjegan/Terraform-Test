@@ -30,7 +30,7 @@ pipeline{
         stage('Push image to dockerhub') {
             steps {
                 script {
-                    sh 'docker push Alvinjegan221/jenkins_demo:taglatest'
+                    sh 'docker push $IMAGE_NAME:latest'
                 }
             }
         }
