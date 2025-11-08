@@ -10,7 +10,7 @@ pipeline{
     stages{
         stage('repo_clone'){
             steps{
-                git_branch: 'main' url: 'https://github.com/Alvinjegan/Terraform-Test'
+                git branch: 'main' url: 'https://github.com/Alvinjegan/Terraform-Test.git'
             }
         }
         stage('Build_docker_image'){
