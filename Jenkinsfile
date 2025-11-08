@@ -2,7 +2,7 @@ pipeline{
     agent any
     environment{
         DOCKERHUB_CREDENTIALS = credentials('dockerhub')
-        IMAGE_NAME = "Alvinjegan221/jenkins_demo"
+        IMAGE_NAME = "alvinjegan221/jenkins_demo"
     }
 
     stages{
