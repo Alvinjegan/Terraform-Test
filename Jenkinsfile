@@ -4,9 +4,7 @@ pipeline{
         DOCKERHUB_CREDENTIALS = credentials('dockerhub')
         IMAGE_NAME = "Alvinjegan221/jenkins_demo"
     }
-    options{
-        timeout(time: 1, unit: 'SECONDS')
-    }
+
     stages{
         stage('repo_clone'){
             steps{
@@ -16,7 +14,8 @@ pipeline{
         stage('Build_docker_image'){
             steps{
                 script{
-                    sh 'docker build -t $IMAGE_NAME:latest .'
+                    sh "docker build -t $IMAGE_NAME:latest ."
+
                 }
             }
         }
