@@ -1,5 +1,5 @@
 pipeline{
-    agents any
+    agent any
     environment{
         DOCKERHUB_CREDENTIALS = credentials('dockerhub')
         IMAGE_NAME = "Alvinjegan221/jenkins_demo"
